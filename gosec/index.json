@@ -1,0 +1,20 @@
+{
+    "title": "SAST in go with Gosec (DevSecOps)",
+    "description": "Tutorial on SAST using Gosec.",
+    "details": {
+      "intro": {
+        "text": "intro/intro.md"
+      },
+      "steps": [
+        {
+          "text": "step1/step1.md"
+        }
+      ]
+    },
+    "backend": {
+      "imageid": "go"
+    },
+    "interface": {
+      "layout": "ide"
+    }
+  }
