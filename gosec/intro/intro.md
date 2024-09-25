@@ -1,4 +1,4 @@
-# Welcome! <img src="../assets/figure.png" style="width: 10px">
+# Welcome! <img src="../assets/figure.png" style="width: 30px">
 
 Welcome to this DevSecOps tutorial on *static application security testing* ([SAST](https://en.wikipedia.org/wiki/Static_application_security_testing)) with [gosec](https://github.com/securego/gosec).
 
