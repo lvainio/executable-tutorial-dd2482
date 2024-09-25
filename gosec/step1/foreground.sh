@@ -1,2 +1,3 @@
 echo "Setting up the environment..."
-go install github.com/securego/gosec/v2/cmd/gosec@latest
+git clone https://github.com/lvainio/executable-tutorial-dd2482.git
+echo DONE

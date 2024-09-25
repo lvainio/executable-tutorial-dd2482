@@ -1,6 +1,6 @@
 # Installation
 
-In order to showcase *gosec* we first need a few things.
+In order for us to begin with the tutorial we first need a few things.
 
 First of all we will begin by downloading a few Go programs that we will scan for security vulnerabilities. This is done for you in the background. 
 
