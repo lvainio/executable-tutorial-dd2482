@@ -8,7 +8,6 @@ In this tutorial you will learn what SAST is and why it is important in a DevOps
 
 # Motivation
 
-Scanning the source code for vulnerabilities every time new code is added allows us to find security vulnerabilities early in the development process. Issues are often far easier and cheaper to fix early on, and using a SAST tool like *gosec* is one way to detect vulnerabilities early.
+Scanning the source code for security vulnerabilities every time new code is added helps us identify potential issues early in the development process. Security issues are often far easier and more cost-effective to address early on. Using a SAST tool such as *gosec* is one way to detect common security vulnerabilities early, before they become a bigger problem.
 
-Security is often a bottleneck in DevOps workflows completely separate security teams have to manually review each new update. This can potentially delay deployment and goes against one of the core ideas of DevOps, which is to automate 
-
+Security can become a bottleneck in DevOps workflows when separate security teams have to manually review each new update. This can potentially delay deployment which goes against the nature of fast and automatic deployments in DevOps. If we instead integrate security directly into the pipeline we can ensure that the deployments meet security standards. While SAST tools like *gosec* will not detect every possible security vulnerability, they do provide an automated way of catching common vulnerabilites early on, which can save both time and money.
