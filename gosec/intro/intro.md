@@ -16,4 +16,4 @@ Scanning the source code for security vulnerabilities every time new code is add
 
 Security can become a bottleneck in DevOps workflows when separate security teams have to manually review each new update. This can potentially delay deployment which goes against the nature of fast and automatic deployments in DevOps. If we instead integrate security directly into the pipeline we can ensure that the deployments meet security standards. While SAST tools like *gosec* will not detect every possible security vulnerability, they do provide an automated way of catching common vulnerabilites early on, which can save both time and money.
 
-> Press next when you are ready to continue!
+> Press *start* when you are ready to continue!
