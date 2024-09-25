@@ -1,9 +1,9 @@
 # Installation
 
-In order for us to begin with the tutorial we first need a few things. A setup script is running in the console which updates the version of Go and downloads a few Go programs which we will scan for security vulnerabilities.
+In order for us to begin with the tutorial we first need a few things. A setup script is running in the console which updates the version of Go and downloads several Go programs which we will scan for security vulnerabilities.
 
+Then we will need to install *gosec*. This can be done in many different ways but one of the easiest ways to do it once you have Go installed on the system is to run the script below.
 
+`go install github.com/securego/gosec/v2/cmd/gosec@latest`{{exec}}
 
-Finally we will install *gosec*. This can be done in many different ways but one of the easiest ways if you already have Go installed on the system is to run:
-
-go install github.com/securego/gosec/v2/cmd/gosec@latest
+> Please wait for the script to finish before clicking next!
