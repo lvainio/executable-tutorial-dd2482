@@ -1,3 +1,1 @@
-#!/bin/bash
-
-which gosec
+stat ~/go/bin/gosec
