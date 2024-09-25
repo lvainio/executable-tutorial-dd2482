@@ -1,5 +1,5 @@
 {
-    "title": "SAST in go with Gosec (DevSecOps)",
+    "title": "SAST in Go with Gosec (DevSecOps)",
     "description": "Tutorial on SAST using Gosec.",
     "details": {
       "intro": {
