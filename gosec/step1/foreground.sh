@@ -1,4 +1,5 @@
 echo "Setting up the environment..."
+export secret="/root/executable-tutorial-dd2482/gosec/step1/secret.txt"
 wget https://golang.org/dl/go1.21.0.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin

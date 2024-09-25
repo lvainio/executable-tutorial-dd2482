@@ -8,4 +8,4 @@ We will of course need to install *gosec* as well. This can be done in many diff
 
 > Please wait for the *gosec* installation to finish, it might take a little while. 
 
-`cat /root/executable-tutorial-dd2482/gosec/step1/text.txt `{{exec}}
+`cat $secret `{{exec}}
