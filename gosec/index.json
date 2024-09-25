@@ -8,7 +8,8 @@
       "steps": [
         {
           "text": "step1/step1.md",
-          "foreground": "step1/foreground.sh"
+          "foreground": "step1/foreground.sh",
+          "verify": "step1/verify.sh"
         }
       ]
     },
