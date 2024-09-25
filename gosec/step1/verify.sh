@@ -1,3 +1,3 @@
 #!/bin/bash
 
-stat gosec
+which gosec
