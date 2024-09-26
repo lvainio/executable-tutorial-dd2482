@@ -6,7 +6,7 @@ You have successfully completed the tutorial! Now that you are familiar with gos
 
 ## Additional Links
 
-Here are some helpful links if you are interested in learning more about the subject security scanning:
+Here are some helpful links if you are interested in learning more about the subject:
 
 - [Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)
 
