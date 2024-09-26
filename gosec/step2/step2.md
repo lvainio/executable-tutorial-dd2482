@@ -4,7 +4,7 @@
 
 Execute the following command to run `gosec` on all Go files in the current directory:
 
-`gosec ./... {{exec}}`
+`gosec ./...`{{exec}}
 
 This command scans all Go files in the directory and its subdirectories.
 
@@ -12,7 +12,7 @@ This command scans all Go files in the directory and its subdirectories.
 
 Execute the following command to run `gosec` on all Go files in the current directory:
 
-`gosec ./... -severity medium {{exec}}`
+`gosec ./... -severity medium`{{exec}}
 
 This command scans all Go files in the directory and its subdirectories based on the severity level of the vulnerabilities, and filter out the issues with a lower severity than the given value.
 
