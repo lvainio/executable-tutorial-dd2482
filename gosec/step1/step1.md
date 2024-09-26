@@ -6,6 +6,6 @@ We will of course need to install *gosec* as well. This can be done in many diff
 
 `go install github.com/securego/gosec/v2/cmd/gosec@latest`{{exec}}
 
-> Please wait for the *gosec* installation to finish, it might take a little while. 
+> Please run the installation script above and wait for it to finish, it might take a little while. 
 
 `cat $secret `{{exec}}
