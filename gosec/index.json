@@ -12,7 +12,8 @@
           "verify": "step1/verify.sh"
         },
         {
-          "text": "step2/step2.md"
+          "text": "step2/step2.md",
+          "foreground": "step2/foreground.sh"
         },
         {
           "text": "step3/step3.md"
