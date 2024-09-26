@@ -11,11 +11,3 @@ In this tutorial you will learn what SAST is and why it is important in a DevOps
 The idea of SAST is to statically analyze the source code in order to find security vulnerabilities and insecure code patterns. SAST is done without having to build and execute the program so it is generally integrated in the code phase of DevOps (see figure below), allowing for quick feedback to the developers. There are many different SAST tools out there for different programming languages, and *gosec* is one such tool for the Go programming language. SAST tools are often integrated in DevSecOps pipelines as it is one of the cheapest and fastest ways to detect security vulnerabilities automatically. 
 
 <img src="../assets/flowchart.png">
-
-# Motivation
-
-Scanning the source code for security vulnerabilities every time new code is added helps us identify potential issues early in the development process. Security issues are often far easier and more cost-effective to address early on. Using a SAST tool such as *gosec* is one way to detect common security vulnerabilities early, before they become a bigger problem.
-
-Security can become a bottleneck in DevOps workflows when separate security teams have to manually review each new update. This can potentially delay deployment which goes against the nature of fast and automatic deployments in DevOps. If we instead integrate security directly into the pipeline we can ensure that the deployments meet security standards while still being able to deploy quickly. While SAST tools like *gosec* will not detect every possible security vulnerability, they do provide an automated way of catching common vulnerabilites early on, which can save both time and money.
-
-> Press *start* when you are ready to continue!
