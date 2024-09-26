@@ -38,7 +38,7 @@ echo "jobs:
       - name: Run Gosec Security Scanner
         uses: securego/gosec@master
         with:
-          args: ./..." > .github/workflows/main.yml
+          args: ./..." >> .github/workflows/main.yml
 ```{{exec}}
 
 If you want to view the entire file you can run:
