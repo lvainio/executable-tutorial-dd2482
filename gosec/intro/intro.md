@@ -8,7 +8,7 @@ In this tutorial you will learn what SAST is and why it is important in a DevOps
 
 # Static Application Security Testing (SAST)
 
-The idea of SAST is to statically analyze the source code in order to find security vulnerabilities and insecure code patterns. There are many different SAST tools out there for different programming languages, and *gosec* is one of them. SAST tools are often integrated in DevSecOps pipelines as it is one of the cheapest and fastest ways to detect security vulnerabilities automatically. 
+The idea of SAST is to statically analyze the source code in order to find security vulnerabilities and insecure code patterns, i.e. SAST is done without actually executing the program. There are many different SAST tools out there for different programming languages, and *gosec* is one of them. SAST tools are often integrated in DevSecOps pipelines as it is one of the cheapest and fastest ways to detect security vulnerabilities automatically. 
 
 # Motivation
 

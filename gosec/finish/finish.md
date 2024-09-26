@@ -4,3 +4,12 @@ You have successfully completed the tutorial! Now that you are familiar with gos
 
 `gosec`{{exec}}
 
+## Additional Links
+
+Here are some helpful links if you are interested in learning more about the subject security scanning:
+
+- [Source Code Analysis Tools](https://owasp.org/www-community/Source_Code_Analysis_Tools)
+
+- [Gosec](https://github.com/securego/gosec)
+
+- [DevSecOps Tools](https://www.atlassian.com/devops/devops-tools/devsecops-tools)
