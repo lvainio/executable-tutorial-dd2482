@@ -8,13 +8,13 @@ In this tutorial you will learn:
 
 - What SAST is, why it is used, and how it can be used to automatically identify security vulnerabilities early in a DevSecOps workflow.
 
-- How to use a SAST tool designed for the Go programming language, called *Gosec*.
+- How to use the SAST tool, *Gosec*, designed for the Go programming language.
 
 - How to integrate *Gosec* with GitHub Actions.
 
 Before starting the tutorial we will first give some background information on SAST and *Gosec*, followed by a motivation. 
 
-The first part of the tutorial will then cover installation of *Gosec*. You will then be guided through various use cases to understand the capabilities of the tool. Finally, you will learn how *Gosec* can be integrated into a GitHub Actions CI workflow to automatically scan the source code of a Go project every time new code is commited to the GitHub repository.
+The first part of the tutorial will then cover installation of *Gosec*. You will then be guided through various use cases to understand the capabilities of the tool. Finally, you will learn how *Gosec* can be integrated with GitHub Actions to automatically scan the GitHub repository for security vulnerabilities when new code is commited. 
 
 # Static Application Security Testing (SAST)
 
