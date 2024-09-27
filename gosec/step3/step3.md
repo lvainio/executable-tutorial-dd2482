@@ -57,10 +57,10 @@ echo "jobs:
 
 ### Pushing the workflow to github.com
 
-The workflow is now completed and the final step would be to push the changes to the remote repository on `github.com`. We cannot really demonstrate that in this limited tutorial environment as it would require permission to push changes to our remote repository. If you are curious and want to see a successful run and an unsuccessful run of this workflow on `github.com` you can view these links:
+The workflow is now completed and the final step would be to push the changes to the remote repository on `github.com`. We cannot really demonstrate that in this limited tutorial environment as it would require permission to push changes to our remote repository. If you are curious and want to see a successful run and a failed run of this workflow on `github.com` you can view these links:
 
-- [successful]() 
-- [unsuccessful]()
+- [successful](https://github.com/lvainio/go-demo/actions/runs/11073520207/job/30770220572) 
+- [failed](https://github.com/lvainio/go-demo/actions/runs/11073441668/job/30769985046)
 
 
 
