@@ -6,7 +6,7 @@ In this section you will learn how to set up automatic security scans with *Gose
 
 ### Downloading a Go project
 
-First we will need a repository that contains a Go project. For demonstration purposes we have created a simple example project that can be downloaded by running the following command.
+First we will need a GitHub repository that contains a Go project. For demonstration purposes we have created a simple Go project that can be cloned by running the following command:
 
 ```
 git clone https://github.com/lvainio/go-demo.git
@@ -14,13 +14,17 @@ cd go-demo/
 ls -la
 ```{{exec}}
 
-As you can see in the terminal, the repository contains a *README*, the Go program, 
+As you can see in the terminal, the repository contains a readme, a simple Go program, and the go.mod file. The program can be run by executing the following command:
+
+```go run main.go```{{exec}}
 
 ### Creating the GitHub Action workflow
 
-Now that we have downloaded a repository and cd:d into it we have to add a workflow so that GitHub automatically runs gosec on our repo when new code is commited. On GitHub, workflows need to be stored in the *.github/workflows* folder so that GitHub can automatically detect and run them, so we create a workflow file called *main.yml* in this folder with the following command: 
+Now that we have cloned the repository we need to create the GitHub Actions workflow. In GitHub repositories, all workflows are defined in YAML files and stored in the `.github/workflows/` directory. GitHub will automatically recognize and run workflows in this directory depending on what event the workflow is configured to trigger on.
 
-`touch .github/workflows/main.yml`{{exec}}
+`touch .github/workflows/gosec-security-scan.yml`{{exec}}
+
+
 
 Finally, we need to define what this workflow should do. In this simple example we want the workflow to run when code is pushed to the main branch so we use the *on* keyword to tell GitHub to trigger this workflow on this event.
 
