@@ -26,6 +26,6 @@ There are many different SAST tools out there for different programming language
 
 # Gosec
 
-*Gosec* is a SAST tool designed for the Go programming language. It works by scanning the *abstract syntax tree* (AST) and the *static single assignment* (SSA) representations of the source code. It can identify a list of common vulnerabilities such as the use of broken hash functions and potential SQL injection vectors.
+*Gosec* is a SAST tool designed for the Go programming language. It works by scanning the *abstract syntax tree* ([AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)) and the *static single assignment* ([SSA](https://en.wikipedia.org/wiki/Static_single-assignment_form)) representations of the source code. It can identify a list of common vulnerabilities such as the use of broken hash functions and potential SQL injection vectors.
 
 > Press *START* when you are ready to continue!
