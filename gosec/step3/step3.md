@@ -16,5 +16,5 @@ You can see several issues were found, but if we instead change the minimum seve
 
 ### Handling false positives
 
-With all SAST tools there there is the problem of false positives...
+With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk.
 
