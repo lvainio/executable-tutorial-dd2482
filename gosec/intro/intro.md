@@ -8,7 +8,7 @@ In this tutorial you will learn:
 
 - What SAST is, why it is used, and how it can be used to automatically identify security vulnerabilities early in a DevSecOps workflow.
 
-- How to use the SAST tool, *Gosec*, designed for the Go programming language.
+- How to use the SAST tool *Gosec*, designed for the Go programming language.
 
 - How to integrate *Gosec* with GitHub Actions.
 
