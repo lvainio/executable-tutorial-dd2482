@@ -18,3 +18,11 @@ You can see several issues were found, but if we instead change the minimum seve
 
 With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk.
 
+TODO: show example of running gosec that finds a false positive.
+
+TODO: insert nosec things in the code.
+
+TODO: run gosec again to show that it no longer reports the false positive.
+
+> Press *NEXT* when you are ready to continue
+
