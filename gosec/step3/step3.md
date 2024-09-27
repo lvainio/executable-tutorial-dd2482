@@ -24,7 +24,7 @@ Now that we have cloned the repository we need to create the GitHub Actions work
 
 `mkdir -p .github/workflows && touch .github/workflows/gosec-security-scan.yml`{{exec}}
 
-Then we need to define when this workflow should be executed. In this example we want the workflow to automatically execute when new code is pushed to the main branch of the repository. The `on` keyword is used to tell GitHub which event we want the workflow to trigger on. In this case, the `push` event on the `main` branch. Run the following command to add the event trigger in our workflow:
+Then we need to define when this workflow should be executed. In this example we want the workflow to automatically execute when new code is pushed to the main branch of the repository. The `on` keyword is used to tell GitHub which event we want the workflow to trigger on. In our case it will be the `push` event on the `main` branch. Run the following command to add the event trigger in our workflow:
 
 ```
 echo "name: Gosec Security Scan
@@ -34,7 +34,7 @@ on:
       - main" > .github/workflows/gosec-security-scan.yml
 ```{{exec}}
 
-Then we need to define what the workflow should do. We do this by adding a job to the workflow. As can be seen in the command right below, the job contains two steps. The first step just downloads the repository and the second step uses the *Gosec* Action (from GitHub Actions Marketplace) to scan the repository for security vulnerabilities.
+Then we need to define what the workflow should do. We do this by adding a job to the workflow. As can be seen in the command right below, the job contains two steps. The first step just downloads the repository and the second step uses the *Gosec* Action (from GitHub Actions Marketplace) to scan the repository for security vulnerabilities. Remember that the argument *./...* tells *Gosec* to scan files in the current directory and all sub directories.
 
 ```
 echo "jobs:
@@ -51,13 +51,13 @@ echo "jobs:
           args: ./..." >> .github/workflows/gosec-security-scan.yml
 ```{{exec}}
 
-> If you want to view the entire file you can run:
+> If you want to view the entire workflow file you can run:
 >
 > `cat .github/workflows/gosec-security-scan.yml`{{exec}}
 
 ### Pushing the workflow to github.com
 
-The workflow is now completed and the final step would be to push the changes to the remote repository on `github.com`. We cannot really demonstrate that in this limited tutorial environment as it would require permission to push changes to our remote repository. If you are curious and want to see a successful run and an unsuccessful run of this workflow on `github.com` you can go to these links:
+The workflow is now completed and the final step would be to push the changes to the remote repository on `github.com`. We cannot really demonstrate that in this limited tutorial environment as it would require permission to push changes to our remote repository. If you are curious and want to see a successful run and an unsuccessful run of this workflow on `github.com` you can view these links:
 
 - [successful]() 
 - [unsuccessful]()
