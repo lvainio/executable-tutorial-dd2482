@@ -6,7 +6,7 @@ Welcome to this DevSecOps tutorial on *static application security testing* ([SA
 
 In this tutorial you will learn:
 
-- What SAST is, why it is used, and how it can be integrated in DevSecOps workflows to automatically identify secrity vulnerabilities.
+- What SAST is, why it is used, and how it can be used to automatically identify security vulnerabilities.
 
 - How to use a SAST tool designed for the Go programming language, called *Gosec*.
 
