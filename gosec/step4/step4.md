@@ -9,8 +9,8 @@ In this section you will learn how to set up automatic security scans with *Gose
 First we will need a GitHub repository that contains a Go project. For demonstration purposes we have created a simple Go project that can be cloned by running the following command:
 
 ```
-git clone https://github.com/lvainio/go-demo.git
-cd go-demo/
+git clone https://github.com/lvainio/go-demo3.git
+cd go-demo3/
 ls
 ```{{exec}}
 
