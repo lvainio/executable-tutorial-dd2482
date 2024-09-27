@@ -4,7 +4,7 @@ Welcome to this DevSecOps tutorial on *static application security testing* ([SA
 
 # Intended Learning Outcomes
 
-In this tutorial you will learn what SAST is and why it is important in a DevOps workflow to automatically identify security vulnerabilities. You will also learn how to use *gosec*, a SAST tool that can scan projects written in the Go programming language.
+In this tutorial you will learn what SAST is and why it is important in a DevOps workflow to automatically identify security vulnerabilities. You will also learn how to use *gosec*, a SAST tool that can scan projects written in the Go programming language for common security vulnerabilities.
 
 The first part of the tutorial covers the installation of *gosec*. You will then be guided through various use cases in order to learn the capabilities of the tool.
 
