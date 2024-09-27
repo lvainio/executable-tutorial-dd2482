@@ -1,8 +1,10 @@
 # Installation
 
-In order for us to begin with the tutorial we first need a few things. A script is running in the console which updates the version of Go and it also downloads a few Go projects which we will run *gosec* on in this tutorial.
+Before we begin the tutorial, we need to set up a few things. A script is running in the terminal which downloads Go and a few Go projects which we will use to run *gosec* on during this tutorial.
 
-We will of course need to install *gosec* as well. This can be done in many different ways but one of the easiest ways to do it is to run the script below:
+After the script has finished we need to install *gosec* as well. This can be done in many different ways but one of the easiest ways to do it is to run the script below:
+
+> Run the installation script below by clicking it or by copying it and pasting it into the terminal on the right.
 
 `go install github.com/securego/gosec/v2/cmd/gosec@latest`{{exec}}
 
