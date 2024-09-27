@@ -1,15 +1,20 @@
 # Advanced *Gosec* features
 
+In this part of the tutorial you will learn about some other useful functionalities of *Gosec*.
+
 ### Severity and Confidence
 
-Talk about how in large programs SAST tools might detect a lot of potential vulnerabilities. Depending on requirements and other things like time and money it might only be necessary or possible to focus on the most important and severy vulnerabilities. Gosec therefore have a way of filtering these out. Show example of gosec showing ALOT of vulnerabilities and then changes setting to only show high severity and such to show that it is now clearer.
+By default, Gosec reports all potential vulnerabilities it detects, regardless of their severity level or the certainty of whether they are true positives (i.e., actual vulnerabilities). Depending on the security requirements of the project, you may want to filter out vulnerabilities based on a minimum severity and confidence level. This approach means that the found vulnerabilities are more likely to be actual security issues and since these have a higher severity it is most likely these issues that you would want to focus on first. 
 
-Execute the following command to run `gosec` on all Go files in the current directory:
+In *Gosec* there are three severity levels and three confidence levels: low, medium and high. The following command tells *Gosec* to find all security vulerabilities of a minimum severity level of medium and a minimum confidence level of medium:
 
-`gosec -severity medium ./...`{{exec}}
+`gosec -severity medium -confidence medium ./...`{{exec}}
 
-This command scans all Go files in the directory and its subdirectories based on the severity level of the vulnerabilities, and filter out the issues with a lower severity than the given value.
+You can see several issues were found, but if we instead change the minimum severity level to high we find only one issue:
+
+`gosec -severity high -confidence medium ./...`{{exec}}
 
 ### Handling false positives
 
-talk about how SAST tools will always have false positives. It might be that the tool detects something that isnt actually a vulnerability or it might be that the vulnerable behaviour is intended. Show example of a false positive. Fix it in the code. Then run gosec again to show that it now does not highlight it. 
+With all SAST tools there there is the problem of false positives...
+
