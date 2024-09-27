@@ -1,4 +1,4 @@
-# Using `gosec`
+# `Gosec` basics
 
 ### Run `gosec`
 
@@ -19,3 +19,5 @@ This command scans all Go files in the directory and its subdirectories based on
 ### Review the Output
 
 After running the command, `gosec` will provide output that lists any potential security issues found in your code.
+
+> Press *NEXT* to continue
