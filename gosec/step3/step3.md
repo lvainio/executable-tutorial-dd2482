@@ -22,7 +22,7 @@ As you can see in the terminal, the repository contains a readme, a simple Go pr
 
 Now that we have cloned the repository we need to create the GitHub Actions workflow. In GitHub repositories, all workflows are defined in YAML files stored in the `.github/workflows/` directory. GitHub will automatically recognize and run workflows in this directory depending on what event the workflow is configured to trigger on. Run the following command to create the YAML file in the workflows directory:
 
-`touch .github/workflows/gosec-security-scan.yml`{{exec}}
+`mkdir -p .github/workflows && touch .github/workflows/gosec-security-scan.yml`{{exec}}
 
 Then we need to define when this workflow should be executed. In this example we want the workflow to automatically execute when new code is pushed to the main branch of the repository. The `on` keyword is used to tell GitHub which event we want the workflow to trigger on. In this case, the `push` event on the `main` branch. Run the following command to add the event trigger in our workflow:
 
@@ -48,11 +48,12 @@ echo "jobs:
       - name: Run Gosec Security Scanner
         uses: securego/gosec@master
         with:
-          args: ./..." >> .github/workflows/main.yml
+          args: ./..." >> .github/workflows/gosec-security-scan.yml
 ```{{exec}}
 
 > If you want to view the entire file you can run:
-> `cat .github/workflows/main.yml`
+>
+> `cat .github/workflows/gosec-security-scan.yml`{{exec}}
 
 
 
