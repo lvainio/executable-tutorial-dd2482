@@ -11,32 +11,30 @@ First we will need a GitHub repository that contains a Go project. For demonstra
 ```
 git clone https://github.com/lvainio/go-demo.git
 cd go-demo/
-ls -la
+ls
 ```{{exec}}
 
-As you can see in the terminal, the repository contains a readme, a simple Go program, and the go.mod file. The program can be run by executing the following command:
+As you can see in the terminal, the repository contains a readme, a simple Go program, and the go.mod file. The program can be executed via the following command:
 
-```go run main.go```{{exec}}
+`go run main.go`{{exec}}
 
 ### Creating the GitHub Action workflow
 
-Now that we have cloned the repository we need to create the GitHub Actions workflow. In GitHub repositories, all workflows are defined in YAML files and stored in the `.github/workflows/` directory. GitHub will automatically recognize and run workflows in this directory depending on what event the workflow is configured to trigger on.
+Now that we have cloned the repository we need to create the GitHub Actions workflow. In GitHub repositories, all workflows are defined in YAML files stored in the `.github/workflows/` directory. GitHub will automatically recognize and run workflows in this directory depending on what event the workflow is configured to trigger on. Run the following command to create the YAML file in the workflows directory:
 
 `touch .github/workflows/gosec-security-scan.yml`{{exec}}
 
-
-
-Finally, we need to define what this workflow should do. In this simple example we want the workflow to run when code is pushed to the main branch so we use the *on* keyword to tell GitHub to trigger this workflow on this event.
+Then we need to define when this workflow should be executed. In this example we want the workflow to automatically execute when new code is pushed to the main branch of the repository. The `on` keyword is used to tell GitHub which event we want the workflow to trigger on. In this case, the `push` event on the `main` branch. Run the following command to add the event trigger in our workflow:
 
 ```
-echo "name: Run Gosec
+echo "name: Gosec Security Scan
 on:
   push:
     branches:
-      - main"
+      - main" > .github/workflows/gosec-security-scan.yml
 ```{{exec}}
 
-Then we need to add the job to the workflow. It will contain a step that downloads the repository containing the go project and one step that runs gosec on the project.
+Then we need to define what the workflow should do. We do this by adding a job to the workflow. As can be seen in the command right below, the job contains two steps. The first step just downloads the repository and the second step uses the *Gosec* Action (from GitHub Actions Marketplace) to scan the repository for security vulnerabilities.
 
 ```
 echo "jobs:
@@ -53,8 +51,10 @@ echo "jobs:
           args: ./..." >> .github/workflows/main.yml
 ```{{exec}}
 
-If you want to view the entire file you can run:
+> If you want to view the entire file you can run:
+> `cat .github/workflows/main.yml`
 
-`cat .github/workflows/main.yml`
 
-This workflow would then have to be commited and pushed to the remote repository but we are a bit limited in this tutorial since we don't want to give write access to our repo in this open tutorial. But for anyone that is interested to see it in action it would be possible to do the same steps as here and add the workflow to see how it works. 
+
+
+
