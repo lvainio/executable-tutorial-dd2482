@@ -6,7 +6,7 @@ Before we begin the tutorial, we need to set up a few things. A script is runnin
 
 We then need to install *gosec* as well. This can be done in many different ways but one of the easiest ways to do it is to run the command below.
 
-> Run the command by clicking it or by copying it and pasting it into the terminal.
+> Run the command by clicking it or by typing it into the terminal.
 
 `go install github.com/securego/gosec/v2/cmd/gosec@latest`{{exec}}
 
