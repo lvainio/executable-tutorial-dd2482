@@ -19,7 +19,8 @@
           "foreground": "step2/foreground.sh"
         },
         {
-          "text": "step3/step3.md"
+          "text": "step3/step3.md",
+          "foreground": "step3/foreground.sh"
         }
       ],
       "finish": {
