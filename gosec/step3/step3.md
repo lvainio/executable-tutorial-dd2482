@@ -55,6 +55,13 @@ echo "jobs:
 >
 > `cat .github/workflows/gosec-security-scan.yml`{{exec}}
 
+### Pushing the workflow to github.com
+
+The workflow is now completed and the final step would be to push the changes to the remote repository on `github.com`. We cannot really demonstrate that in this limited tutorial environment as it would require permission to push changes to our remote repository. If you are curious and want to see a successful run and an unsuccessful run of this workflow on `github.com` you can go to these links:
+
+- [successful]() 
+- [unsuccessful]()
+
 
 
 
