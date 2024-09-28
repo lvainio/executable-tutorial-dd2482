@@ -4,11 +4,11 @@ Run the following command:
 
 `gosec -r broken_hash/`{{exec}}
 
-we can see in the output that there are listed security vulnerabilities related to the usage of the broken hash algorithm [MD5](https://en.wikipedia.org/wiki/MD5). 
+we can see in the output that there are two listed security vulnerabilities related to the usage of the broken hash algorithm [MD5](https://en.wikipedia.org/wiki/MD5). 
 
-So what should we do when *Gosec* detects a vulnerability? The first step would of course be to look at the output and see what information it gives us. In this simple case, *Gosec* points out that the problems exist in the file *main.go* on line 4 and 12 which is where the broken hash algorithm MD5 is imported and then used. *Gosec* is also points out which CWE:s that the problems map to which can help if you need to research what the security issue is about. 
+So what should we do when *Gosec* detects a vulnerability? The first step would of course be to look at the output and see what information it gives us. In this case, *Gosec* points out that the problems exist in the file *main.go* on line 4 and 12 which is where the broken hash algorithm MD5 is imported and then used. *Gosec* also points out which CWE:s that the problems map to which can be helpful if you need to research what the security issue is about. 
 
-In this simple example we can solve the problems by just using a more secure hash algorithm such as [SHA256](https://en.wikipedia.org/wiki/SHA-2). We can do this by replacing the occurences of the string "md5" with the string "sha256" in the file *main.go* with the following Linux command:
+In this example we can solve the problems by just using a more secure hash algorithm such as [SHA256](https://en.wikipedia.org/wiki/SHA-2). We can do this by replacing the occurences of the string "md5" with the string "sha256" in the file *main.go* with the following Linux command:
 
 `sed -i 's/md5/sha256/g' main.go`{{exec}}
 
