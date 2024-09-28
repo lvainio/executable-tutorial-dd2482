@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	text := "Unsafe MD5 Hash"
+	text := "Hello"
 
 	hash := md5.New()
 	hash.Write([]byte(text))
@@ -15,4 +15,4 @@ func main() {
 	checksum := hex.EncodeToString(hash.Sum(nil))
 
 	fmt.Printf("MD5 hash of '%s' is: %s\n", text, checksum)
-}s
+}
