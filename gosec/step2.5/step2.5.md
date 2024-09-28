@@ -14,7 +14,7 @@ In this example we can solve the problems by just using a more secure hash algor
 
 If we run the *Gosec* scan again we should see that the security issue is now gone!
 
-`gosec -r broken/hash`{{exec}}
+`gosec -r broken_hash/`{{exec}}
 
 Hopefully it is clear that having a tool automatically detect vulnerabilities and pointing out exactly where they exist in the code can make it much more easy and faster to resolve the issues.
 
