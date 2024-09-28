@@ -19,10 +19,12 @@
           "foreground": "step2/foreground.sh"
         },
         {
-          "text": "step2.5/step2.5.md"
+          "text": "step2.5/step2.5.md",
+          "foreground": "step2.5/foreground.sh"
         },
         {
-          "text": "step3/step3.md"
+          "text": "step3/step3.md",
+          "foreground": "step3/foreground.sh"
         },
         {
           "text": "step4/step4.md",

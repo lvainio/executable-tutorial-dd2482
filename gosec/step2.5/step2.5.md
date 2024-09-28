@@ -10,7 +10,7 @@ So what should we do when *Gosec* detects a vulnerability? The first step would 
 
 In this example we can solve the problems by just using a more secure hash algorithm such as [SHA256](https://en.wikipedia.org/wiki/SHA-2). We can do this by replacing the occurences of the string "md5" with the string "sha256" in the file *main.go* with the following Linux command:
 
-`sed -i 's/md5/sha256/g' main.go`{{exec}}
+`sed -i 's/md5/sha256/g' broken_hash/main.go`{{exec}}
 
 If we run the *Gosec* scan again we should see that the security issue is now gone!
 
