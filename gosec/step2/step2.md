@@ -30,8 +30,4 @@ We can pick any rule from the list we see in the terminal but as an example we c
 
 As you can see in the terminal we only see one vulnerability and it matches rule G404. Feel free to experiment with other rules in the terminal.
 
-### Fixing an issue
-
-TODO: show how we can fix a security issue and then run gosec again to see that the security issue is no longer there.
-
 > Press *NEXT* when you are ready to continue
