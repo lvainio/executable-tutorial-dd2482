@@ -4,11 +4,11 @@ Now that *Gosec* is installed we will begin with learning some basic commands.
 
 ### Run *Gosec*
 
-Often we want to scan an entire repository for vulnerabilities. *Gosec* has an easy way of doing this. Execute the following command to run *Gosec* on all Go files in the current directory and recursively in all subdirectories.
+Often we want to scan an entire code repository for vulnerabilities. Run the following *Gosec* command to scan all files in the current directory and all subdirectories recursively.
 
 `gosec ./...`{{exec}}
 
-After running the command, you can see that *Gosec* provides output that lists any potential security issues found. Since we are scanning recursively you can see that there are many potential issues listed. If you look at the output in the terminal you also see that *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on fixing the issues. Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in fixing the issue.
+After running the command, you can see in the terminal on the right that *Gosec* lists all potential security issues found. Since we are scanning recursively you can see that there are many potential issues listed. If you look at the output in the terminal you also see that *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on fixing the issues. Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in resolving the issue.
 
 ### Scan Specific Directories
 
@@ -20,7 +20,7 @@ You can see that there is less output now which can be easier to filter through 
 
 ### Scan for Specific vulnerabilities
 
-It is also possible to instruct *Gosec* to only search for specific vulnerabilities. By running the following command we can see which rules (vulnerabilities) that *Gosec* supports:
+It is also possible to instruct *Gosec* to only search for specific types of vulnerabilities. By running the following command we can see which rules (vulnerabilities) that *Gosec* supports:
 
 `gosec`{{exec}}
 
