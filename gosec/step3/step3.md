@@ -22,23 +22,22 @@ Run the following command:
 
 `gosec -r false_positive/`{{exec}}
 
-As you can see, *Gosec* prints out one potential vulnerability related to the usage of an insecure random number generator on line 9. This is only insecure when used for cryptographic purposes but in this case we are just using it to print out a random number. So, we would like to mark this vulnerability as being a false positive. To do this we add a comment on line 9 like follows:
+As you can see, *Gosec* prints out one potential vulnerability related to the usage of an insecure random number generator on line 9. This is only insecure when used for cryptographic purposes but in this case we are just using it to print out a random number. So, we would like to mark this vulnerability as being a false positive. To do this we add a comment on the line where the vulnerability is reported with the format `#nosec <Rules>` like follows:
 
 ```
-package main
-
-import (
-	"fmt"
-	"math/rand"
-)
-
-func main() {
-	randomNumber := rand.Intn(100) // #nosec G404
-	fmt.Println("Random number:", randomNumber)
-}
+8 func main() {
+9 	 randomNumber := rand.Intn(100) // #nosec G404
+10 	 fmt.Println("Random number:", randomNumber)
+11 }
 ```
 
-TODO: run gosec again to show that it no longer reports the false positive.
+To add this comment to the file you can run the following command:
+
+`sed -i '9s/$/ //#nosec G404/' false_positive/main.go`
+
+Now if you run the same scan again you can see that the false positive is not reported as a security issue anymore!
+
+`gosec -r false_positive/`{{exec}}
 
 > Press *NEXT* when you are ready to continue
 
