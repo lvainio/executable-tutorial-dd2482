@@ -8,7 +8,7 @@ Often we want to scan an entire code repository for vulnerabilities. Run the fol
 
 `gosec ./...`{{exec}}
 
-After running the command, you can see in the terminal on the right that *Gosec* lists all potential security issues found. Since we are scanning recursively you can see that there are many potential issues listed. If you look at the output in the terminal you also see that *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on fixing the issues. Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in resolving the issue.
+After running the command, you can see in the terminal on the right that *Gosec* lists 10 potential security issues. You can also see that for each reported vulnerability, *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on resolving the issues. Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in resolving the issue.
 
 ### Scan Specific Directories
 
@@ -28,6 +28,6 @@ We can pick any rule from the list we see in the terminal but as an example we c
 
 `gosec -include=G404, ./...`{{exec}}
 
-As you can see in the terminal we only see one vulnerability and it matches rule G404. Feel free to experiment with other rules in the terminal.
+As you can see in the terminal we only see two vulnerabilities and they match rule G404. Feel free to experiment with other rules in the terminal.
 
 > Press *NEXT* when you are ready to continue

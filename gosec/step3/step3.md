@@ -10,7 +10,7 @@ In *Gosec* there are three severity levels and three confidence levels: low, med
 
 `gosec -severity medium -confidence medium ./...`{{exec}}
 
-You can see several issues were found, but if we instead change the minimum severity level to high we find only one issue that is of high severity:
+You can see several issues are reported, but if we instead change the minimum severity level to high we only find two issues:
 
 `gosec -severity high -confidence medium ./...`{{exec}}
 
@@ -22,7 +22,7 @@ Run the following scan:
 
 `gosec -r false_positive/`{{exec}}
 
-As you can see, *Gosec* prints out one potential vulnerability related to the usage of an insecure random number generator on line 9. This is only insecure when used for security purposes, but in this case we are just using it to print out a random number. So, we would like to mark this vulnerability as being a false positive. To do this we add a comment on the line where the vulnerability is reported, with the format `#nosec <Rules>` like follows:
+As you can see, *Gosec* prints out one potential vulnerability related to the usage of an insecure random number generator on line 9. This is only insecure when used for security purposes, but in this case we are just using it to print out a random number. So, we would like to mark this vulnerability as being a false positive. To do this we add a comment on the line where the vulnerability is reported, with the format `#nosec G404` to ignore this specific vulnerability:
 
 ```
 8 func main() {
