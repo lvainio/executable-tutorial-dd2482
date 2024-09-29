@@ -16,7 +16,7 @@ You can see several issues were found, but if we instead change the minimum seve
 
 ### Handling false positives
 
-With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk.
+With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk. If a false positive is found we may want to mark it to prevent *Gosec* from reporting it as a vulnerabilitiy every time the scan runs in our CI workflow. Now you will learn how to do this in *Gosec*.
 
 TODO: show example of running gosec that finds a false positive.
 
