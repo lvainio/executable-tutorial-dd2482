@@ -16,11 +16,27 @@ You can see several issues were found, but if we instead change the minimum seve
 
 ### Handling false positives
 
-With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk. If a false positive is found we may want to mark it to prevent *Gosec* from reporting it as a vulnerabilitiy every time the scan runs in our CI workflow. Now you will learn how to do this in *Gosec*.
+With all SAST tools there is the issue of false positives. A false positive is a reported vulnerability that does not actually pose a security risk. If a reported security issue is manually confirmed to be safe we may want to mark it to prevent *Gosec* from reporting it as a vulnerabilitiy every time the scan runs in our CI workflow. Now you will learn how to do this in *Gosec*.
 
-TODO: show example of running gosec that finds a false positive.
+Run the following command:
 
-TODO: insert nosec things in the code.
+`gosec -r false_positive/`{{exec}}
+
+As you can see, *Gosec* prints out one potential vulnerability related to the usage of an insecure random number generator on line 9. This is only insecure when used for cryptographic purposes but in this case we are just using it to print out a random number. So, we would like to mark this vulnerability as being a false positive. To do this we add a comment on line 9 like follows:
+
+```
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+func main() {
+	randomNumber := rand.Intn(100) // #nosec G404
+	fmt.Println("Random number:", randomNumber)
+}
+```
 
 TODO: run gosec again to show that it no longer reports the false positive.
 
