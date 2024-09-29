@@ -10,7 +10,7 @@ In *Gosec* there are three severity levels and three confidence levels: low, med
 
 `gosec -severity medium -confidence medium ./...`{{exec}}
 
-You can see several issues were found, but if we instead change the minimum severity level to high we find only one issue:
+You can see several issues were found, but if we instead change the minimum severity level to high we find only one issue that is of high severity:
 
 `gosec -severity high -confidence medium ./...`{{exec}}
 
