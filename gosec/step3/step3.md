@@ -4,7 +4,9 @@ In this part of the tutorial you will learn about some other useful functionalit
 
 ### Severity and Confidence
 
-By default, Gosec reports all potential vulnerabilities it detects, regardless of their severity level or the certainty of whether they are true positives (i.e., actual vulnerabilities). Depending on the security requirements of the project, you may want to filter out vulnerabilities based on a minimum severity and confidence level. This approach means that the found vulnerabilities are more likely to be actual security issues and since these have a higher severity it is most likely these issues that you would want to focus on first. 
+By default, Gosec reports all potential vulnerabilities it detects, regardless of their severity level or the certainty of whether they are true positives (i.e., actual vulnerabilities). 
+
+Depending on the security requirements of the project, you may want to filter out vulnerabilities based on a minimum severity and confidence level. This approach means that the found vulnerabilities are more likely to be actual security issues and since these have a higher severity it is most likely these issues that you would want to focus on first. 
 
 In *Gosec* there are three severity levels and three confidence levels: low, medium and high. The following command tells *Gosec* to find all security vulerabilities of a minimum severity level of medium and a minimum confidence level of medium:
 
