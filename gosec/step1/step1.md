@@ -8,8 +8,10 @@ We then need to install *Gosec* as well. The command below installs the latest v
 
 > Run the command by clicking it or by typing it into the terminal.
 
-`go install github.com/securego/gosec/v2/cmd/gosec@latest`{{exec}}
+```
+go install github.com/securego/gosec/v2/cmd/gosec@latest
+```{{exec}}
 
-> Press *CHECK* when the script has finished. The validation will then be successful and take you to the next part of the tutorial. It can take a little while.
+> Press CHECK when the script has finished. This may take 1-2 minutes. Once complete, the validation will be successful, and you can proceed to the next part of the tutorial.
 
-`cat $secret `{{exec}}
+`cat $secret `{{exec}} =^•ﻌ•^=
