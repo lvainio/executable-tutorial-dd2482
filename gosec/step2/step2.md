@@ -8,7 +8,9 @@ Often we want to scan an entire code repository for vulnerabilities. Run the fol
 
 `gosec ./...`{{exec}}
 
-After running the command, you can see in the terminal on the right that *Gosec* lists 10 potential security issues. You can also see that for each reported vulnerability, *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on resolving the issues. Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in resolving the issue.
+After running the command, you can see in the terminal on the right that *Gosec* lists 10 potential security issues. You can also see that for each reported vulnerability, *Gosec* lists in which file and where in the file the security issue is located. This is very helpful for developers that will work on resolving the issues. 
+
+Additionally you can see that the output states which CWE ([Common Weakness Enumeration](https://cwe.mitre.org/)) that the found vulnerability maps to which can also be helpful in resolving the issue.
 
 ### Scan Specific Directories
 

@@ -4,3 +4,5 @@ cd ./unsafe_sql_concat
 go get github.com/mattn/go-sqlite3
 cd ../
 echo DONE
+clear
+echo "Gosec Basics"
